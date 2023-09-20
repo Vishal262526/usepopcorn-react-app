@@ -1,0 +1,250 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  text-decoration: none;
+}
+
+:root {
+  --dark-color: #222831;
+  --light-color: #393e46;
+  --very-light-color: #4a4f58;
+  --white-color: #ffffff;
+}
+
+body {
+  background-color: var(--dark-color);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--light-color);
+  /* padding: 1rem 2rem; */
+  height: 70px;
+  /* border-radius: 12px; */
+  /* margin: 1rem; */
+  color: #fff;
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 350px auto;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.logo a {
+  font-size: 1.6rem;
+  font-weight: bold;
+  font-family: sans-serif;
+  color: white;
+}
+
+.search > input {
+  padding: 0.8rem;
+  margin-left: auto;
+  margin-right: auto;
+
+  border-radius: 12px;
+  border: none;
+  color: #fff;
+  outline: none;
+  background: var(--very-light-color);
+}
+
+.search > input::placeholder {
+  color: #cecece;
+}
+
+.menu ul li a {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.box {
+  background-color: var(--light-color);
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.box button {
+  padding: 0.3rem 1rem;
+  font-size: 1.3rem;
+  color: #fff;
+  background-color: var(--very-light-color);
+  border: none;
+  outline: none;
+  border-radius: 12px;
+}
+
+.box .dropdown-btn {
+  text-align: end;
+  margin-bottom: 1rem;
+}
+
+.movie-list .movie {
+  color: var(--white-color);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  /* background-color: rgb(82, 82, 82); */
+  background-color: var(--very-light-color);
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.movie-list .movie:hover {
+  /* background-color: rgb(101, 101, 101); */
+  /* font-variant: var(--light-color); */
+  background-color: #646c79;
+  /* background-color: #c5aeff; */
+}
+
+.movie-list .movie .movie-img {
+  width: 60px;
+  height: 60px;
+  /* border-radius: 50%; */
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.movie-list .movie .movie-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.movie-list > .movie .movie-name {
+  font-size: 1.3rem;
+
+  font-weight: bold;
+  margin-bottom: 0.2rem;
+}
+
+.movie-list .movie .movie-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.watch-header {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  color: #fff;
+  background-color: rgb(82, 82, 82);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+}
+
+.watch-header p {
+  font-size: 1rem;
+}
+
+.watch-movie {
+  display: flex;
+  /* align-items: center; */
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+
+.watch-movie-img {
+  width: 50px;
+  height: 50 px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.watch-movie-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.watch-header-detail {
+  margin-top: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.watch-movie {
+  background-color: rgb(82, 82, 82);
+  color: var(--white-color);
+  padding: 1rem;
+}
+
+.watch-movie-description {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.selected-movie {
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  /* background-color:   background-color: rgb(82, 82, 82);; */
+  /* background-color: rgb(82, 82, 82); */
+  background: var(--very-light-color);
+  gap: 1rem;
+}
+
+.selected-movie-img {
+  width: 40%;
+}
+
+.selected-movie-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.selected-movie-detail {
+  padding: 1rem;
+  width: 60%;
+  color: #fff;
+}
+
+.selected-movie-detail .selected-movie-title {
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.selected-movie-detail .selected-movie-runtime {
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+}
+.selected-movie-detail .selected-movie-genre {
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+}
+
+.selected-movie-detail .selected-movie-rating {
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+}
+
+.selected-movie-footer .add-to-watch-list-button {
+  background: var(--dark-color);
+  border-radius: 6px;
+  margin-top: 1rem;
+  cursor: pointer;
+  /* padding: 1rem 1rem; */
+  padding: 0.7rem 0.7rem;
+  font-size: 1rem;
+}
+
+.selected-movie-footer {
+  margin-top: 1rem;
+  padding: 1rem;
+  text-align: center;
+  background: var(--very-light-color);
+}
